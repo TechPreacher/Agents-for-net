@@ -150,14 +150,7 @@ internal class EvaluationService(CopilotClient copilotClient, IChatClient chatCl
                 csv.Context.RegisterClassMap<EvalDatasetCsvMap>();
                 evalDataset = csv.GetRecords<EvalDataset>().ToList();
                 
-                Console.WriteLine($"Total evaluation questions Loaded: {evalDataset.Count}");
-                
-                // Example of working with the strongly typed list
-                foreach (var evalQuestion in evalDataset)
-                {
-                    Console.WriteLine($"Name: {evalQuestion.Name}, TestType: {evalQuestion.TestType}, TestUtterance: {evalQuestion.TestUtterance}, " +
-                                        $"ExpectedResponse: {evalQuestion.ExpectedResponse}.");
-                }
+                Console.WriteLine($"Total evaluation questions Loaded: {evalDataset.Count}\n");
             }
         }
         catch (Exception ex)
