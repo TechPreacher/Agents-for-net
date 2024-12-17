@@ -1,4 +1,6 @@
-﻿using Microsoft.Agents.CopilotStudio.Client;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+using Microsoft.Agents.CopilotStudio.Client;
 using Microsoft.Extensions.Configuration;
 
 namespace EvalClient

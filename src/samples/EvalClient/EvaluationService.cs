@@ -3,11 +3,9 @@
 using CsvHelper;
 using System.Globalization;
 using CsvHelper.Configuration;
-
 using Microsoft.Agents.CopilotStudio.Client;
 using Microsoft.Agents.Protocols.Primitives;
 using Microsoft.Extensions.Hosting;
-
 using Microsoft.Extensions.AI;
 
 namespace EvalClient;

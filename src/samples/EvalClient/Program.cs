@@ -1,16 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+// See https://aka.ms/new-console-template for more information
 using System.ClientModel;
 using Microsoft.Agents.CopilotStudio.Client;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.AI;
 using Azure.AI.OpenAI;
-using Azure.Identity;
-
 using EvalClient;
 
 // Setup the Direct To Engine client example. 
