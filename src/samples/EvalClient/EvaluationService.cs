@@ -13,11 +13,11 @@ using Microsoft.Extensions.AI;
 namespace EvalClient;
 
 /// <summary>
-/// This class is responsible for handling the Chat Console service and managing the conversation between the user and the Copilot Studio hosted bot.
+/// This class is responsible for handling the Evaluation service and managing the conversation with the Copilot Studio hosted bot and Azure OpenAI.
 /// </summary>
 /// <param name="copilotClient">Connection Settings for connecting to Copilot Studio</param>
 
-internal class ChatConsoleService(CopilotClient copilotClient, IChatClient chatClient) : IHostedService
+internal class EvaluationService(CopilotClient copilotClient, IChatClient chatClient) : IHostedService
 {
     /// <summary>
     /// This is the main thread loop that manages the back and forth communication with the Copilot Studio Bot. 

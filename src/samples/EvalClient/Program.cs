@@ -39,7 +39,7 @@ builder.Services
                     .AsChatClient(settings.AzureOpenAiDeployment);        
         }    
     )
-    .AddHostedService<ChatConsoleService>();
+    .AddHostedService<EvaluationService>();
 IHost host = builder.Build();
 host.Run();
 
