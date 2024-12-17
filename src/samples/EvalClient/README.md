@@ -99,7 +99,7 @@ This should challenge you for login and connect ot the Copilot Studio Hosted bot
 
 ```plain
 Name: Asus Zenbook Duo 2024
-Test Type: Respone Match
+Test Type: Response Match
 Test Utterance: How can I charge the removable keyboard of the Asus Zenbook Duo 2024?
 Expected Response: To charge the removable keyboard of the Asus Zenbook Duo 2024 insert the bundled power adapter into the USB-C port on the keyboard or dock it with the laptop to charge via the built-in connector.
 Sources: https://tenant.sharepoint.com/sample/Document%20Library%201/2.pdf;https://tenant.sharepoint.com/sample/Document%20Library%201/3.pdf
@@ -109,7 +109,7 @@ Sources: https://tenant.sharepoint.com/sample/Document%20Library%201/2.pdf;https
 
 ```plain
 Name: Asus Zenbook Duo 2024
-Test Type: Respone Match
+Test Type: Response Match
 est Utterance: How can I charge the removable keyboard of the Asus Zenbook Duo 2024?
 Expected Response: To charge the removable keyboard of the Asus Zenbook Duo 2024 insert the bundled power adapter into the USB-C port on the keyboard or dock it with the laptop to charge via the built-in connector.
 Sources: https://tenant.sharepoint.com/sample/Document%20Library%201/2.pdf;https://tenant.sharepoint.com/sample/Document%20Library%201/3.pdf
