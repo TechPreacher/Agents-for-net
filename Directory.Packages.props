@@ -16,12 +16,19 @@
 		<Microsoft_AspNetCore_PkgVer>8.0.11</Microsoft_AspNetCore_PkgVer>
 	</PropertyGroup>
 	<ItemGroup>
+	    <!--Added for EvalClient -->
+		<PackageVersion Include="CsvHelper" Version="33.0.1" />
+		<PackageVersion Include="Azure.AI.OpenAI" Version="2.1.0" />
+		<PackageVersion Include="Microsoft.Extensions.AI.OpenAI" Version="9.0.1-preview.1.24570.5" />
+		<PackageVersion Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.0" />
+		<!--End Added for EvalClient -->
+
 		<PackageVersion Include="Microsoft.IdentityModel.Tokens" Version="8.1.2" />
 		<PackageVersion Include="Nerdbank.GitVersioning" Version="3.6.146" />
 		<PackageVersion Include="AdaptiveCards.Rendering.Html" Version="2.7.3" />
 		<PackageVersion Include="Azure.Identity" Version="1.12.1" />
 		<PackageVersion Include="Azure.Core" Version="1.43.0" />
-		<PackageVersion Include="Microsoft.Identity.Client" Version="4.64.1" />
+		<PackageVersion Include="Microsoft.Identity.Client" Version="4.65.0" />
 		<PackageVersion Include="Microsoft.Identity.Client.Extensions.Msal" Version="4.65.0" />
 		<PackageVersion Include="Microsoft.IdentityModel.Abstractions" Version="8.1.2" />
 		<PackageVersion Include="Microsoft.IdentityModel.LoggingExtensions" Version="8.1.2" />

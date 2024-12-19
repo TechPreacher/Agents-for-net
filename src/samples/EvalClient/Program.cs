@@ -38,7 +38,7 @@ builder.Services
     )
     .AddHostedService<EvaluationService>();
 IHost host = builder.Build();
-host.Run();
+await host.StartAsync();
 
 
 
