@@ -9,7 +9,6 @@ namespace EvalClient;
 public class EvalDataset
 {
     public string Name { get; set; }
-    public string TestType { get; set; }
     public string TestUtterance { get; set; }
     public string ExpectedResponse { get; set; }
     public string Sources { get; set; }

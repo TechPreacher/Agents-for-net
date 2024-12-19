@@ -12,7 +12,7 @@ namespace EvalClient
     /// This sample uses an HttpClientHandler to add an authentication token to the request.
     /// </summary>
     /// <param name="settings">Direct To engine connection settings.</param>
-    internal class AddTokenHandler(SampleConnectionSettings settings) : DelegatingHandler(new HttpClientHandler())
+    internal class AddTokenHandler(EvalClientConfig settings) : DelegatingHandler(new HttpClientHandler())
     {
         private static readonly string _keyChainServiceName = "copilot_studio_client_app";
         private static readonly string _keyChainAccountName = "copilot_studio_client";

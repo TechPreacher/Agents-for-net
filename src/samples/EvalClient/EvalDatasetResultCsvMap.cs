@@ -13,7 +13,6 @@ public class EvalDatasetResultCsvMap : ClassMap<EvalDataset>
     public EvalDatasetResultCsvMap()
     {
         Map(m => m.Name).Name("Name");
-        Map(m => m.TestType).Name("Test Type");
         Map(m => m.TestUtterance).Name("Test Utterance");
         Map(m => m.ExpectedResponse).Name("Expected Response");
         Map(m => m.Sources).Name("Sources");

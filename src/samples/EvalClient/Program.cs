@@ -15,7 +15,7 @@ using EvalClient;
 HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
 // Get the configuration settings for the DirectToEngine client from the appsettings.json file.
-SampleConnectionSettings settings = new SampleConnectionSettings(builder.Configuration.GetSection("DirectToEngineSettings"));
+EvalClientConfig settings = new EvalClientConfig(builder.Configuration.GetSection("DirectToEngineSettings"));
 
 
 // Create an http client for use by the DirectToEngine Client and add the token handler to the client.
@@ -38,7 +38,7 @@ builder.Services
     )
     .AddHostedService<EvaluationService>();
 IHost host = builder.Build();
-host.Run();
+await host.StartAsync();
 
 
 
