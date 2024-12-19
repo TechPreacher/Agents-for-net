@@ -155,7 +155,7 @@ internal class EvaluationService(EvalClientConfig settings, CopilotClient copilo
                 csv.Context.RegisterClassMap<EvalDatasetCsvMap>();
                 evalDataset = csv.GetRecords<EvalDataset>().ToList();
                 
-                Console.WriteLine($"Total evaluation questions Loaded: {evalDataset.Count}\n");
+                Console.WriteLine($"Total evaluation questions Loaded: {evalDataset.Count}");
             }
         }
         catch (Exception ex)
