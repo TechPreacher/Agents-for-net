@@ -8,12 +8,12 @@ namespace EvalClient;
 /// </summary>
 public class EvalDataset
 {
-    public string Name { get; set; }
-    public string TestUtterance { get; set; }
-    public string ExpectedResponse { get; set; }
-    public string Sources { get; set; }
-    public string AgentResponse { get; set; }
-    public string AnswerScore { get; set; }
-    public string SourcesScore { get; set; }
+    public string? Name { get; set; }
+    public string? TestUtterance { get; set; }
+    public string? ExpectedResponse { get; set; }
+    public string? Sources { get; set; }
+    public string? AgentResponse { get; set; }
+    public string? AnswerScore { get; set; }
+    public string? SourcesScore { get; set; }
 }
 

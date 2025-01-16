@@ -48,8 +48,8 @@ namespace EvalClient
         /// <exception cref="ArgumentException"></exception>
         public EvalClientConfig(IConfigurationSection config) :base (config)
         {
-            AppClientId = config[nameof(AppClientId)] ?? throw new ArgumentException($"{nameof(AppClientId)} not found in config");
             TenantId = config[nameof(TenantId)] ?? throw new ArgumentException($"{nameof(TenantId)} not found in config");
+            AppClientId = config[nameof(AppClientId)] ?? throw new ArgumentException($"{nameof(AppClientId)} not found in config");
             AzureOpenAiEndpoint = config[nameof(AzureOpenAiEndpoint)] ?? throw new ArgumentException($"{nameof(AzureOpenAiEndpoint)} not found in config");
             AzureOpenAiKey = config[nameof(AzureOpenAiKey)] ?? throw new ArgumentException($"{nameof(AzureOpenAiKey)} not found in config");
             AzureOpenAiDeployment = config[nameof(AzureOpenAiDeployment)] ?? throw new ArgumentException($"{nameof(AzureOpenAiDeployment)} not found in config");

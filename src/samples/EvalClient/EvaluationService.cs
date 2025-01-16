@@ -63,7 +63,7 @@ internal class EvaluationService(EvalClientConfig settings, CopilotClient copilo
             {
                 evalDataset[count].AgentResponse = response.Replace(",", "");
                 evalDataset[count].AnswerScore = await EvaluateResponse(evalDataset[count]);
-                evalDataset[count].SourcesScore = await EvaluateSourcesScore(evalDataset[count]);
+                evalDataset[count].SourcesScore = EvaluateSourcesScore(evalDataset[count]);
             }
         }
 
@@ -120,7 +120,7 @@ internal class EvaluationService(EvalClientConfig settings, CopilotClient copilo
     /// </summary>
     /// <param name="evalDataPoint"></param>
     /// <returns name="string"></returns>
-    private async Task<string> EvaluateSourcesScore(EvalDataset evalDataPoint)
+    private string EvaluateSourcesScore(EvalDataset evalDataPoint)
     {
         var sourceUrls = evalDataPoint.Sources.Split(';').ToList();
         var urlFound = 0;
